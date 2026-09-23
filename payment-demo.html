@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Demo</title>
+    <link rel="stylesheet" href="payment-demo.css" />
+  </head>
+  <body>
+    <main class="demo-payment" id="demo-payment">
+      <p class="demo-badge">TEST MODE</p>
+      <div class="qr-placeholder" aria-label="Non-scannable QR placeholder"><img src="assets/demo-qr-placeholder.png" alt="Demo QR placeholder" /></div>
+      <h1>PAY USING UPI</h1>
+      <p class="timer-label">This demo expires in</p>
+      <time id="countdown" class="countdown" datetime="PT5M">05:00</time>
+    </main>
+    <script src="payment-demo.js"></script>
+  </body>
+</html>

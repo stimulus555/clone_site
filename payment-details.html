@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Details Layout</title>
+    <link rel="stylesheet" href="payment-details.css" />
+  </head>
+  <body>
+    <main class="payment-layout">
+      <aside class="layout-box information-panel" data-box="1">
+        <div class="layout-box identity-slot" data-box="2">Sarthak Kumar</div>
+        <div class="layout-box admission-title" data-box="3">3</div>
+        <div class="layout-box title-line" data-box="4">4</div>
+        <div class="layout-box sharing-slot" data-box="5">5</div>
+        <div class="layout-box contact-slot" data-box="6">6</div>
+        <div class="layout-box terms-slot" data-box="7">7</div>
+      </aside>
+
+      <section class="layout-box payment-panel" data-box="8">
+        <div class="layout-box form-heading" data-box="9">Payment Details</div>
+        <div class="layout-box heading-line" data-box="10">10</div>
+        <div class="student-photo-row">
+          <div class="layout-box student-name-box">SARTHAK KUMAR</div>
+          <div class="layout-box photo-box" aria-label="Sarthak Kumar passport photo"><img src="assets/sarthak-passport.jpeg" alt="Sarthak Kumar" /></div>
+        </div>
+        <div class="form-grid">
+          <div class="layout-box label-slot" data-box="11">Email *</div><div class="layout-box input-slot" data-box="12">sarthaksingh11201@gmail.com</div>
+          <div class="layout-box label-slot" data-box="13">Phone *</div><div class="layout-box input-slot" data-box="14">+91 8051375872</div>
+          <div class="layout-box label-slot" data-box="15">STUDENT NAME *</div><div class="layout-box input-slot" data-box="16">Sarthak Kumar</div>
+          <div class="layout-box label-slot" data-box="17">AADHAR CARD NO *</div><label class="layout-box input-slot input-control" data-box="18"><input type="text" inputmode="numeric" placeholder="Enter Aadhar card number" /></label>
+          <div class="layout-box label-slot" data-box="19">PROGRAM NAME *</div><label class="layout-box input-slot input-control" data-box="20"><select id="course"><option value="" selected disabled>--Select course--</option><option>Bachelor of Arts</option><option>Bachelor of Commerce</option></select></label>
+          <div class="layout-box label-slot" data-box="21">FEE PAID FOR *</div><label class="layout-box input-slot input-control" data-box="22"><select id="fee-type"><option value="" selected disabled>--Select--</option><option value="registration">Registration fee</option><option value="admission">Admission fee</option><option value="transport">Transport fee</option><option value="course">Course fee</option><option value="hostel">Hostel fee</option></select></label>
+          <div class="layout-box label-slot" data-box="23">AMOUNT *</div><div class="layout-box input-slot amount-slot" data-box="24">₹ <span id="amount">0</span></div>
+        </div>
+        <div class="layout-box payment-footer"><div class="methods-slot" data-box="25"><img src="assets/payment-methods.png" alt="Accepted payment methods" /></div><a class="pay-button" data-box="26" href="payment-demo.html">Pay ₹ <span id="pay-amount">0</span></a></div>
+      </section>
+    </main>
+    <script src="payment-details.js"></script>
+  </body>
+</html>

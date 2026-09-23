@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Old Students Login Layout</title>
+    <link rel="stylesheet" href="online-payment.css" />
+  </head>
+  <body>
+    <main class="login-page">
+      <section class="layout-box campus-background" data-box="1">1</section>
+      <section class="layout-box login-panel" data-box="2">
+        <div class="layout-box account-tabs" data-box="3">
+          <label data-box="4"><input type="radio" name="account-type" value="student" checked /> STUDENT</label>
+          <label data-box="5"><input type="radio" name="account-type" value="parent" /> PARENTS</label>
+        </div>
+        <label class="layout-box field-slot" data-box="6"><img src="assets/login-user.jpg" alt="Username" /><span>|</span><input type="text" placeholder="USERNAME" /></label>
+        <label class="layout-box field-slot" data-box="7"><img src="assets/login-password.jpg" alt="Password" /><span>|</span><input type="password" placeholder="PASSWORD" /></label>
+        <div class="layout-box captcha-slot" data-box="8"><img src="assets/login-captcha.jpg" alt="CAPTCHA code" /></div>
+        <label class="layout-box code-field" data-box="9"><input type="text" placeholder="Enter the above captcha" /></label>
+        <a class="layout-box reset-slot" data-box="10" href="#forgot-password">Forgot Password ?</a>
+        <a class="layout-box login-button" data-box="11" href="payment-details.html">LOGIN</a>
+      </section>
+    </main>
+    <script src="online-payment.js"></script>
+  </body>
+</html>

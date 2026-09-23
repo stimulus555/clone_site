@@ -1,0 +1,27 @@
+:root { --navy: #14367a; --red: #c91d32; --line: #e4e7eb; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; color: var(--navy); font-family: Arial, Helvetica, sans-serif; background: #fff; }
+.payment-layout { display: grid; place-items: stretch center; min-height: 100vh; }
+.layout-box { display: grid; place-items: center; border: 1px solid currentColor; color: var(--navy); font-size: .92rem; font-weight: 800; }
+.information-panel { display: none; }
+.payment-panel { position: relative; display: grid; align-content: start; width: min(526px, 100vw); min-height: 707px; padding: 16px 34px 83px; border: 0; background: #fff; }
+.form-heading { justify-content: start; min-height: 34px; border-color: transparent; font-size: 1.25rem; }
+.heading-line { justify-self: start; width: 31px; min-height: 5px; margin: 10px 0 39px; border: 0; color: transparent; background: var(--red); }
+.student-photo-row { display: grid; grid-template-columns: minmax(160px, 1fr) 122px; align-items: center; gap: 22px; margin: -22px 0 27px; }
+.student-name-box { justify-content: start; min-height: 42px; padding: 0 12px; border-color: var(--line); color: var(--navy); font-weight: 500; }
+.photo-box { min-height: 96px; border-color: var(--line); background: #fafafa; }
+.photo-box img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.form-grid { display: grid; grid-template-columns: 154px minmax(200px, 1fr); align-items: center; gap: 33px 26px; }
+.label-slot { justify-content: start; min-height: 40px; border-color: transparent; font-size: 1rem; font-weight: 500; }
+.input-slot { min-height: 40px; border-color: var(--line); color: #a1aab7; font-weight: 400; }
+.input-control { display: block; padding: 0; }
+.input-control input, .input-control select { width: 100%; min-height: 38px; padding: 0 10px; border: 0; outline: 0; color: var(--navy); background: transparent; font: inherit; }
+.input-control input::placeholder { color: #a1aab7; }
+.amount-slot { justify-content: start; padding: 0 10px; color: var(--navy); }
+.payment-footer { position: absolute; right: 0; bottom: 0; display: grid; grid-template-columns: 62.5% 37.5%; width: 100%; min-height: 60px; border: 0; background: #f4f5f6; }
+.methods-slot { display: grid; place-items: center start; padding-left: 31px; }
+.methods-slot img { max-width: 200px; max-height: 28px; object-fit: contain; }
+.pay-button { display: grid; place-items: center; border: 0; color: #fff; background: var(--red); font: inherit; font-size: 1rem; font-weight: 800; cursor: pointer; text-decoration: none; }
+.pay-button:hover { background: #ad1628; }
+.layout-box:focus-visible { outline: 4px solid #ffbf22; outline-offset: 3px; }
+@media (max-width: 520px) { .payment-panel { padding: 16px 24px 83px; } .student-photo-row { grid-template-columns: minmax(120px, 1fr) 94px; gap: 12px; } .form-grid { grid-template-columns: 135px minmax(120px, 1fr); gap: 31px 12px; } .label-slot { font-size: .85rem; } }
